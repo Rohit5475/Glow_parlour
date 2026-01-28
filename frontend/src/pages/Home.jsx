@@ -5,22 +5,34 @@ export default function Home() {
     <div className="bg-purple-50">
 
       {/* HERO SECTION */}
-      <section className="min-h-screen flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-5xl md:text-6xl font-bold text-purple-600 mb-4">
-          Glow Beauty Parlour
-        </h1>
+<section
+  className="min-h-screen flex flex-col items-center justify-center text-center px-4 bg-cover bg-center relative"
+  style={{
+    backgroundImage:
+      "url(https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9)"
+  }}
+>
+  {/* Overlay
+  <div className="absolute inset-0 bg-purple-900/50"></div> */}
 
-        <p className="text-lg text-gray-700 mb-6">
-          Your beauty, our passion 💖
-        </p>
+  <div className="relative z-10">
+    <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
+      Glow Beauty Parlour
+    </h1>
 
-        <Link
-          to="/book"
-          className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full shadow-lg transition"
-        >
-          Book Appointment
-        </Link>
-      </section>
+    <p className="text-lg text-purple-100 mb-6">
+      Your beauty, our passion 💖
+    </p>
+
+    <Link
+      to="/book"
+      className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full shadow-lg transition"
+    >
+      Book Appointment
+    </Link>
+  </div>
+</section>
+
 
       {/* SERVICES SECTION */}
       <section className="py-16 bg-white">

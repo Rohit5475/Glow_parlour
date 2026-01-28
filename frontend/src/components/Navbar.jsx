@@ -11,10 +11,9 @@ export default function Navbar() {
         <Link className="hover:text-purple-200" to="/services">Services</Link>
         <Link className="hover:text-purple-200" to="/book">Book Appointment</Link>
         <Link className="hover:text-purple-200" to="/contact">Contact</Link>
-        <Link className="hover:text-purple-200" to="/login">Login</Link>
-        <Link className="hover:text-purple-200" to="/register">Register</Link>
-        
-        
+
+        {/* SINGLE AUTH PAGE */}
+        <Link className="hover:text-purple-200" to="/auth">Account</Link>
       </div>
     </nav>
   );

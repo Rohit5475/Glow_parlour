@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function BookAppointment() {
   const [date, setDate] = useState("");
@@ -25,8 +26,19 @@ export default function BookAppointment() {
   };
 
   return (
-    <div className="min-h-screen bg-purple-50 flex items-center justify-center px-4">
-      <div className="bg-white w-full max-w-lg p-8 rounded-2xl shadow-lg">
+  <div className="bg-purple-50">
+
+    {/* HERO WITH BACKGROUND IMAGE */}
+    <section
+      className="min-h-screen flex items-center justify-center px-4 bg-cover bg-center relative"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9)"
+      }}
+    >
+     
+      {/* BOOKING FORM ON TOP OF IMAGE */}
+      <div className="relative z-10 w-full max-w-lg bg-white p-8 rounded-2xl shadow-2xl">
 
         <h1 className="text-3xl font-bold text-center text-purple-600 mb-6">
           Book Appointment
@@ -110,6 +122,9 @@ export default function BookAppointment() {
           </div>
         )}
       </div>
-    </div>
-  );
+    </section>
+
+  </div>
+);
+
 }

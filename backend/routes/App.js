@@ -1,4 +1,4 @@
-{/* <Routes>
+{ <Routes>
   <Route path="/" element={<Home />} />
   <Route path="/services" element={<Services />} />
   <Route path="/book" element={<BookAppointment />} />
@@ -24,4 +24,5 @@
   }
 />
 
-</Routes> */}
+</Routes>
+}

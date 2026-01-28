@@ -1,9 +1,9 @@
-const jwt = require("jsonwebtoken");
+const mongoose = require("mongoose");
 
-module.exports = (req, res, next) => {
-  const token = req.headers.authorization;
-  if (!token) return res.status(401).send("Unauthorized");
-
-  req.user = jwt.verify(token, "secretkey");
-  next();
+const connectDB = async () => {
+  await mongoose.connect("mongodb://127.0.0.1:27017/mernAuth");
+  console.log("MongoDB Connected");
 };
+
+module.exports = connectDB;
+
